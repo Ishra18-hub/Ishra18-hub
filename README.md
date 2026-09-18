@@ -56,7 +56,13 @@
 
 ##  GitHub Stats
 
-![Ishra's GitHub Stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Ishra18-hub&show_icons=true&theme=dark)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Ishra18-hub&show_icons=true&theme=dark" alt="GitHub Stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ishra18-hub&theme=dark" alt="GitHub Streak" />
+</p>
 
 ---
 

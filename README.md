@@ -6,11 +6,18 @@
 
 ##  Current Project
 
-**Solar Desalination ML** — Predicting freshwater yield in solar desalination systems using Machine Learning
+**Project 1 — Solar Desalination ML — Predicting freshwater yield in solar desalination systems using Machine Learning**
 
--  Extension of my Final Year Design Project (FYDP) on solar desalination
--  Using experimental data from FYDP (32.35% thermal efficiency)
--  ML models: Linear Regression, Random Forest, XGBoost (upcoming)
+-Extension of my Final Year Design Project (FYDP) on solar desalination
+-Using experimental data from FYDP (32.35% thermal efficiency)
+-ML models: Linear Regression, Random Forest, XGBoost (upcoming)
+
+**Project 2 — Solar PV Power Generation Forecasting — Forecasting next 15-minute solar PV power output using weather sensor data and recent power history**
+
+-Investigating whether recent AC power history improves short-term forecasts compared to weather data alone
+-Data-driven plant selection, leakage-aware feature engineering, and chronological train/val/test splitting
+-ML models: Linear Regression, Random Forest, Gradient Boosting
+-Status: EDA and feature engineering complete — modeling in progress
 
 ---
 
@@ -19,6 +26,7 @@
 -  **Python for Data Science** (Kaggle Python Course)
 -  **Pandas, NumPy, Matplotlib**
 -  **Machine Learning** (Scikit-learn)
+-  **Time-Series Forecasting & Data Leakage Prevention**
 -  **Data Visualization**
 
 ---
@@ -68,10 +76,17 @@
 
 ## 📌 Featured Projects
 
-###  [Solar Desalination ML](https://github.com/Ishra18-hub/Solar-Desalination-ML)
-> ML project for predicting freshwater yield in solar desalination systems using FYDP data.
+### 💧 [Solar Desalination ML](https://github.com/Ishra18-hub/Solar-Desalination-ML)
 
-**Tech Stack:** Python, Pandas, NumPy, Matplotlib, Google Colab
+ML project for predicting freshwater yield in solar desalination systems using FYDP data.
+
+Tech Stack: Python, Pandas, NumPy, Matplotlib, Google Colab
+
+### ☀️ [Solar PV Power Generation Forecasting](https://github.com/Ishra18-hub/solar-pv-forecasting-ml)
+
+ML project forecasting next 15-minute solar PV power output using weather sensor data and recent power history, with a focus on rigorous data leakage prevention and chronological validation.
+
+Tech Stack: Python, Pandas, NumPy, Matplotlib, Scikit-learn, Google Colab
 
 ---
 

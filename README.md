@@ -27,7 +27,7 @@
 -  **Pandas, NumPy, Matplotlib**
 -  **Machine Learning** (Scikit-learn)
 -  **Time-Series Forecasting & Data Leakage Prevention**
--  **Data Visualization**
+-  **IBM Data Visualization with PYTHON** (COURSERA ONLINE COURSE)
 
 ---
 

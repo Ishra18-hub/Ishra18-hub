@@ -6,18 +6,21 @@
 
 ##  Current Project
 
-**Project 1 — Solar Desalination ML — Predicting freshwater yield in solar desalination systems using Machine Learning**
+**Project 1: Solar Desalination ML — Predicting freshwater yield in solar desalination systems using Machine Learning**
 
 -Extension of my Final Year Design Project (FYDP) on solar desalination
 -Using experimental data from FYDP (32.35% thermal efficiency)
 -ML models: Linear Regression, Random Forest, XGBoost (upcoming)
 
-**Project 2 — Solar PV Power Generation Forecasting — Forecasting next 15-minute solar PV power output using weather sensor data and recent power history**
+**Project 2: Solar PV Power Forecasting, Weather Sensors vs Power History
+Forecasting AC power output 15, 30 and 60 minutes ahead for a 22-inverter solar plant (Kaggle dataset, 34 days at 15-minute resolution)**
 
--Investigating whether recent AC power history improves short-term forecasts compared to weather data alone
--Data-driven plant selection, leakage-aware feature engineering, and chronological train/val/test splitting
--ML models: Linear Regression, Random Forest, Gradient Boosting
--Status: EDA and feature engineering complete — modeling in progress
+-**Research question**: does recent AC power history improve short-term forecasts compared with weather-sensor data alone, and how does that change with the forecast horizon?
+-**Data handling:** data-driven plant selection, leakage-aware feature engineering built from exact timestamps, and a chronological train/validation/test split on day boundaries with a boundary purge. I found and corrected a row-dropping bug in my own pipeline (3,103 → 3,113 rows) and an inverter-aggregation error, and checked that neither changed the conclusions.
+-**Models:** Linear Regression, Random Forest, Gradient Boosting, tuned on validation only, with the test set used once. Benchmarks: persistence, same-time-yesterday, and a smart (clear-sky-index) persistence.
+-**Evaluation:** MAE, RMSE and R² on all rows and daytime rows, plus paired block-bootstrap confidence intervals.
+-**Finding:** power history gave no statistically detectable improvement. Time of day helped more, and smart persistence was hard to beat at 15 minutes. A diagnostic showed the remaining error comes mainly from unpredictable cloud-driven changes in irradiation.
+-**Status:** modeling and evaluation complete. Plant 2 robustness check and final report in progress.
 
 ---
 

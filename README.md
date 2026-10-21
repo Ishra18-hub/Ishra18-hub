@@ -6,13 +6,14 @@
 
 ##  Current Project
 
-**Project 1: Solar Desalination ML — Predicting freshwater yield in solar desalination systems using Machine Learning**
+**Project 1 - Solar Desalination ML — Predicting freshwater yield in solar desalination systems using Machine Learning**
 
 -Extension of my Final Year Design Project (FYDP) on solar desalination
 -Using experimental data from FYDP (32.35% thermal efficiency)
 -ML models: Linear Regression, Random Forest, XGBoost (upcoming)
 
-**Project 2: Solar PV Power Forecasting, Weather Sensors vs Power History
+
+**Project 2 - Solar PV Power Forecasting, Weather Sensors vs Power History
 Forecasting AC power output 15, 30 and 60 minutes ahead for a 22-inverter solar plant (Kaggle dataset, 34 days at 15-minute resolution)**
 
 -**Research question**: does recent AC power history improve short-term forecasts compared with weather-sensor data alone, and how does that change with the forecast horizon?

@@ -6,22 +6,40 @@
 
 ##  Current Project
 
-**Project 1 - Solar Desalination ML — Predicting freshwater yield in solar desalination systems using Machine Learning**
+# Project 1 - Solar Desalination ML — Predicting freshwater yield in solar desalination systems using Machine Learning**
 
 -Extension of my Final Year Design Project (FYDP) on solar desalination
 -Using experimental data from FYDP (32.35% thermal efficiency)
 -ML models: Linear Regression, Random Forest, XGBoost (upcoming)
 
 
-**Project 2 - Solar PV Power Forecasting, Weather Sensors vs Power History
-Forecasting AC power output 15, 30 and 60 minutes ahead for a 22-inverter solar plant (Kaggle dataset, 34 days at 15-minute resolution)**
+# Project 2 — Solar PV Power Forecasting
 
--**Research question**: does recent AC power history improve short-term forecasts compared with weather-sensor data alone, and how does that change with the forecast horizon?
--**Data handling:** data-driven plant selection, leakage-aware feature engineering built from exact timestamps, and a chronological train/validation/test split on day boundaries with a boundary purge. I found and corrected a row-dropping bug in my own pipeline (3,103 → 3,113 rows) and an inverter-aggregation error, and checked that neither changed the conclusions.
--**Models:** Linear Regression, Random Forest, Gradient Boosting, tuned on validation only, with the test set used once. Benchmarks: persistence, same-time-yesterday, and a smart (clear-sky-index) persistence.
--**Evaluation:** MAE, RMSE and R² on all rows and daytime rows, plus paired block-bootstrap confidence intervals.
--**Finding:** power history gave no statistically detectable improvement. Time of day helped more, and smart persistence was hard to beat at 15 minutes. A diagnostic showed the remaining error comes mainly from unpredictable cloud-driven changes in irradiation.
--**Status:** modeling and evaluation complete. Plant 2 robustness check and final report in progress.
+**Weather sensors vs. recent power history**
+
+This project forecasts AC power output 15, 30, and 60 minutes ahead for a solar plant modeled at a 22-inverter scale, using 34 days of 15-minute Kaggle data.
+
+## Research question
+
+Does recent AC power history improve short-term forecasts compared with weather-sensor data alone, and how does its value change with forecast horizon?
+
+## Method
+
+- Selected the plant using a data-driven comparison.
+- Built features and future targets from exact timestamps to avoid leakage.
+- Split data chronologically by day into training, validation, and test sets, purging rows whose targets crossed split boundaries.
+- Corrected a row-dropping bug in the feature pipeline: the eligible row count increased from 3,103 to 3,113. Also corrected the inverter aggregation method and checked whether these changes affected the results.
+- Compared Linear Regression, Random Forest, and Gradient Boosting models, tuning on validation data.
+- Evaluated persistence, same-time-yesterday, and clear-sky-index smart-persistence benchmarks.
+- Reported MAE, RMSE, and R² for all test rows and daytime rows, with paired block-bootstrap confidence intervals.
+
+## Findings
+
+Across the evaluated horizons, adding recent power history did not show a consistent, statistically detectable improvement over weather-based features. Time-of-day features were more useful in several comparisons, and smart persistence was a strong benchmark at 15 minutes. A diagnostic analysis suggests that cloud-driven irradiation changes are a major source of remaining forecast error.
+
+## Status
+
+Plant 1 modeling and evaluation are complete. The Plant 2 robustness check and final report are in progress.
 
 ---
 

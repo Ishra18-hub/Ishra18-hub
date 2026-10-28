@@ -4,26 +4,26 @@
 
 ---
 
-##  Current Project
+#  Current Project
 
-# Project 1 - Solar Desalination ML — Predicting freshwater yield in solar desalination systems using Machine Learning**
+## Project 1 - Solar Desalination ML — Predicting freshwater yield in solar desalination systems using Machine Learning**
 
 -Extension of my Final Year Design Project (FYDP) on solar desalination
 -Using experimental data from FYDP (32.35% thermal efficiency)
 -ML models: Linear Regression, Random Forest, XGBoost (upcoming)
 
 
-# Project 2 — Solar PV Power Forecasting
+## Project 2 — Solar PV Power Forecasting
 
 **Weather sensors vs. recent power history**
 
 This project forecasts AC power output 15, 30, and 60 minutes ahead for a solar plant modeled at a 22-inverter scale, using 34 days of 15-minute Kaggle data.
 
-## Research question
+### Research question
 
 Does recent AC power history improve short-term forecasts compared with weather-sensor data alone, and how does its value change with forecast horizon?
 
-## Method
+### Method
 
 - Selected the plant using a data-driven comparison.
 - Built features and future targets from exact timestamps to avoid leakage.
@@ -33,11 +33,11 @@ Does recent AC power history improve short-term forecasts compared with weather-
 - Evaluated persistence, same-time-yesterday, and clear-sky-index smart-persistence benchmarks.
 - Reported MAE, RMSE, and R² for all test rows and daytime rows, with paired block-bootstrap confidence intervals.
 
-## Findings
+### Findings
 
 Across the evaluated horizons, adding recent power history did not show a consistent, statistically detectable improvement over weather-based features. Time-of-day features were more useful in several comparisons, and smart persistence was a strong benchmark at 15 minutes. A diagnostic analysis suggests that cloud-driven irradiation changes are a major source of remaining forecast error.
 
-## Status
+### Status
 
 Plant 1 modeling and evaluation are complete. The Plant 2 robustness check and final report are in progress.
 
